@@ -2,12 +2,17 @@
     import AddForm from "./AddForm.svelte";
     import ItemList from "./ItemList.svelte";
     import Matcher from "./Matcher.svelte";
-    import { items } from "./store";
+    import { items, sortItems } from "./store";
 
     let tabIndex = 0;
 </script>
 
-<button on:click={() => (tabIndex = 0)}>Item list</button>
+<button
+    on:click={() => {
+        sortItems();
+        tabIndex = 0;
+    }}>Item list</button
+>
 <button
     on:click={() => {
         if ($items.length > 1) tabIndex = 1;
