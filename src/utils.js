@@ -2,7 +2,7 @@ export function getRandom(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
-const K_FACTOR = 30;
+const K_FACTOR = 50;
 
 /**
  * Calculates the probabilty of the a to win based on a and b's ratings.

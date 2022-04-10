@@ -11,7 +11,7 @@ export function addItem(name) {
         ...get(items),
         {
             name,
-            elo: 1500,
+            elo: 1000,
         },
     ]);
 }
