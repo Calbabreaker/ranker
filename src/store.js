@@ -23,4 +23,5 @@ export function deleteItem(i) {
 
 export function sortItems() {
     get(items).sort((a, b) => b.elo - a.elo);
+    items.set(get(items));
 }

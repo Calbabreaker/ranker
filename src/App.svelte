@@ -11,13 +11,17 @@
     on:click={() => {
         sortItems();
         tabIndex = 0;
-    }}>Item list</button
+    }}
 >
+    Item list
+</button>
 <button
     on:click={() => {
         if ($items.length > 1) tabIndex = 1;
-    }}>Matcher</button
+    }}
 >
+    Matcher
+</button>
 <div class="container">
     {#if tabIndex == 0}
         <AddForm />
