@@ -25,8 +25,8 @@
     }
 
     function onKeyDown(event) {
-        if (event.key == "1") choose(1);
-        else if (event.key == "2") choose(2);
+        if (event.key == "1") choose(0);
+        else if (event.key == "2") choose(1);
     }
 </script>
 
