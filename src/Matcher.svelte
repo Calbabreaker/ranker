@@ -23,8 +23,14 @@
         } while (itemTuple[0] == itemTuple[1]);
         return itemTuple;
     }
+
+    function onKeyDown(event) {
+        if (event.key == "1") choose(1);
+        else if (event.key == "2") choose(2);
+    }
 </script>
 
+<svelte:window on:keydown={onKeyDown} />
 <div>
     Choose
     <button on:click={() => choose(0)}>{itemTuple[0].name}</button> or
